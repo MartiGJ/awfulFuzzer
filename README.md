@@ -5,8 +5,8 @@ Implements coverage using AddressSanitizer as seen in Gynvael's stream.
 
 ## Usage
 ```bash
-clang -g target/testPrgrm.c -fsanitize=address -fsanitize-coverage=bb,trace-pc-guard -o testPrgm
-./awfulFuzzer -input testfile -target testPrgm
+$ clang -g target/testPrgrm.c -fsanitize=address -fsanitize-coverage=bb,trace-pc-guard -o testPrgm
+$ ./awfulFuzzer -input testfile -target testPrgm
 ```
 ## Images
 ![](images/example.gif)
